@@ -2,6 +2,7 @@ from django.db import models
 import uuid
 from django.conf import settings
 import os
+from django.db.models import JSONField
 
 # Create your models here.
 class persistent_storage(models.Model):
@@ -13,6 +14,7 @@ class persistent_storage(models.Model):
     model_type = models.TextField()
     num_topics = models.IntegerField()
     normalisation = models.TextField()
+    topic_labels = JSONField(default=list, blank=True, null=True)
     save_model = models.FileField(upload_to='models',default='')
 
     def __str__(self):

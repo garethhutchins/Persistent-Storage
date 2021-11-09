@@ -26,9 +26,9 @@ Create a new save for the model with the following inputs:<br />
     'save_model' : 'A pickle of the saved model and vectoriser'<br />
 }
 
-###GET model
+### GET model
 Get the model of a specific ID
 http://host/storage/{ID}
 
-###Delete a model
+### Delete a model
 http://host/storage/{ID}

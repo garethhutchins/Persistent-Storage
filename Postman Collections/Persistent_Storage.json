@@ -1,0 +1,103 @@
+{
+  "info": {
+    "_postman_id": "5d8440d2-c25c-4f3f-8f72-0c4d2eedde9b",
+    "name": "Persistent Storage",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Save Model",
+      "id": "d23b77a3-02cf-4069-a2b6-0386499f42d7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file_name",
+              "value": "Gareth",
+              "type": "text"
+            },
+            {
+              "key": "model_type",
+              "value": "NMF",
+              "type": "text"
+            },
+            {
+              "key": "num_topics",
+              "value": "1",
+              "type": "text"
+            },
+            {
+              "key": "normalisation",
+              "value": "Lem",
+              "type": "text"
+            },
+            {
+              "key": "topic_labels",
+              "value": "{}",
+              "type": "text"
+            },
+            {
+              "key": "save_model",
+              "type": "file",
+              "src": "/C:/Users/ghutchin/Downloads/ISEC_-_GIS_Cloud_Security_Requirements_Testing_and_Acceptance_Standard.pdf"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8001/storage/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8001",
+          "path": [
+            "storage",
+            ""
+          ],
+          "query": [
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "disabled": true
+            },
+            {
+              "key": "",
+              "value": null,
+              "type": "text",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

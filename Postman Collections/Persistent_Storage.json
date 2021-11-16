@@ -46,6 +46,11 @@
               "key": "save_model",
               "type": "file",
               "src": "/C:/Users/ghutchin/Downloads/ISEC_-_GIS_Cloud_Security_Requirements_Testing_and_Acceptance_Standard.pdf"
+            },
+            {
+              "key": "topics_image",
+              "type": "file",
+              "src": "/C:/Users/ghutchin/Desktop/work.png"
             }
           ]
         },

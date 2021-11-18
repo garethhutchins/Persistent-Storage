@@ -31,3 +31,15 @@ class persistent_storage(models.Model):
         imagefile = str(self.topics_image)
         os.remove(os.path.join(settings.MEDIA_ROOT, imagefile))
         super().delete(*args, **kwargs)
+    
+    def save(self, *args, **kwargs):
+        try:
+            this = persistent_storage.objects.get(name=self.name)
+            if this.save_model != self.save_model:
+                filepath = str(this.save_model)
+                os.remove(os.path.join(settings.MEDIA_ROOT, filepath))
+            if this.topics_image != self.topics_image:
+                imagefile = str(this.topics_image)
+                os.remove(os.path.join(settings.MEDIA_ROOT, imagefile))
+        except: pass
+        super(persistent_storage, self).save(*args, **kwargs)

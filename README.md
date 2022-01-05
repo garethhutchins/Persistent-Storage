@@ -19,7 +19,7 @@ Accept form data<br />
 Create a new save for the model with the following inputs:<br />
 {<br />
     'file_name' : 'The name of the file, usually a unique ID',<br />
-    'model_type' : 'NMF|LDA|TF-IDF',<br />
+    'model_type' : 'K-MEANS|NMF|LDA|TF-IDF',<br />
     'num_topics' : 'The number of topics used in the model (integer)',<br />
     'normalisation' : 'stemming|lemmitisation|none',<br />
     'topic_labels' : 'A json dictionary of the lables',<br />

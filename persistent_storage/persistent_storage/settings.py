@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-la7h^9f-9l3=ww0uwp&8d-qr1#9*$)e@t5r^hk!)f&*0c1tfcg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+# monkey patch to get rid of message below in docker
+from django.http.request import HttpRequest
+HttpRequest.get_host = HttpRequest._get_raw_host
 
 
 # Application definition

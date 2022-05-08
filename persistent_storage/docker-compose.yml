@@ -17,6 +17,7 @@ services:
     ports:
       - "8001:8001"
     hostname: persistent-storage
+    image: garethhutchins/nf_persistent_storage
     
   
 
